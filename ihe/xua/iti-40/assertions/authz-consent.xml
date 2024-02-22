@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<saml2:Assertion ID="_cc6d6756-0900-4621-bb27-a6b043b86c8b" IssueInstant="2024-02-22T22:29:33.601Z" Version="2.0" xsi:type="saml2:AssertionType" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <saml2:Issuer>urn:subiger:dhp:sts</saml2:Issuer>
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+            <ds:Reference URI="#_cc6d6756-0900-4621-bb27-a6b043b86c8b">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                        <ec:InclusiveNamespaces PrefixList="xsd" xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                    </ds:Transform>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                <ds:DigestValue>7xr/yooRRIdfR97eMAqRlgEmgsF0SHZKupYlN4qiAL4=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>TtVuREYSH0iaJaPFR4qFN4MrxE3sjewoFy3a6x7jB6DvBA3pHBSeLTiIrLCmaqcuRR5Q3iV0ptjy6/HRfHqz0RBIUsHN5RbewNRkhQYneFEbxLkfdjuIFwEUn4VTVVWSVAz5EZL9pAiRi/ME+HBySWNuhLlNmEMQWt7+6FSdRxV5YtHMYqB8Hg1zpWctCUFRqFhn3m1Ra3J6bl6HvnWH04B5/hVa6I8VXIWEzqEd6yq+daEoYveT+df79rFcjPV4YAbo2H48KAxAhFJFv59vPzVbx4Ushp69s8J50SejSNY7BmS1wtbNd6TKUc3HWvPETSxqqAN3s4XtMxTr97tL3g==</ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:X509Data>
+                <ds:X509Certificate>MIIEdDCCA1ygAwIBAgICBZMwDQYJKoZIhvcNAQENBQAwTDELMAkGA1UEBhMCRlIxEzARBgNVBAoM
+                    CklIRSBFdXJvcGUxFjAUBgNVBAMMDUlIRSBFdXJvcGUgQ0ExEDAOBgNVBAsMB0dhemVsbGUwHhcN
+                    MjQwMjIyMjIwMzI1WhcNMzQwMjIyMjIwMzI1WjBBMQswCQYDVQQGEwJGUjEQMA4GA1UECgwHU3Vi
+                    aWdlcjEgMB4GA1UEAwwXRGlnaXRhbCBIZWFsdGggUGxhdGZvcm0wggEiMA0GCSqGSIb3DQEBAQUA
+                    A4IBDwAwggEKAoIBAQC/t+cet2S9o3yCGLma+vrDaY2NvWoYsR+33uoF1DMQ2qM4KxR5f+iKMN+q
+                    kAZV8rAb2iYaGuoKiJIEXmLo6Iiep/ZMH3OvkkUMBfqyU879gBDwa1mqZhL5aM4HOiHXMz2YFNQd
+                    TfLxSPDTqaNK1DVP1q8MzOlU8ZGgY/nWbMpaAuqEnpOkAQPDWDBuzviRFZAWF/fR8IjqjxZS3hCl
+                    xRqZ7ULoc8O04+OTxaO6UhfxJ8QWc6jW1YBHix8OvBPXG9lmTvDXmyclUPMtsB+E7Yfyg8AQodOJ
+                    ol1Jh35l3OG5eejCb5sDPf71mB+43VOLQ22PzR2U8jPadLH67/3DD2LhAgMBAAGjggFpMIIBZTA/
+                    BgNVHR8EODA2MDSgMqAwhi5odHRwczovL2dhemVsbGUuaWhlLm5ldC9nc3MvY3JsLzI2NTYvY2Fj
+                    cmwuY3JsMD0GCWCGSAGG+EIBBAQwFi5odHRwczovL2dhemVsbGUuaWhlLm5ldC9nc3MvY3JsLzI2
+                    NTYvY2FjcmwuY3JsMD0GCWCGSAGG+EIBAwQwFi5odHRwczovL2dhemVsbGUuaWhlLm5ldC9nc3Mv
+                    Y3JsLzI2NTYvY2FjcmwuY3JsMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFF5C8YKAo00rDVkghpDE
+                    dDdGmnllMB8GA1UdIwQYMBaAFB5Dc7RV/SqtX6HsiiaJlDBtYjmPMA4GA1UdDwEB/wQEAwIE8DAR
+                    BglghkgBhvhCAQEEBAMCBeAwMwYDVR0lBCwwKgYIKwYBBQUHAwIGCCsGAQUFBwMEBgorBgEEAYI3
+                    FAICBggrBgEFBQcDATANBgkqhkiG9w0BAQ0FAAOCAQEAcqht2pkc+h3zwLEpGCj2nwRF38xQ22Tj
+                    rrWsPaSd1H8jgMwZq6oMsh+z2bFapeYe6NjTgAKbbf+sXa+YIhwAtSUPXhf5AVimZ8/Cma39hXQV
+                    /FXmDbkAuRqBUfiYVW3kmo0npvsl7/yXDDEMmXRvcSZvi435hrkn0ZGQ3nGGgIqtWK9QzNooiFh8
+                    UbmgdRrxNyRH7JBMTxkqPF4wYPGwgebr6D9/MZP2eVq7yWddpoDdoMshBZPM0RFJ8Dvz1W4f79CI
+                    junTeAeDKNtmaPkKdIlaTJ50rDBWIpuGzF4gnuxs4Rma5toJ2wbpZdjwYrSDMnL3f6UEn6+a6Pop
+                    FEbQlw==</ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+    </ds:Signature>
+    <saml2:Subject>
+        <saml2:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified">doctor</saml2:NameID>
+        <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"/>
+    </saml2:Subject>
+    <saml2:Conditions NotBefore="2024-02-22T22:29:33.601Z" NotOnOrAfter="2024-02-22T22:59:33.601Z">
+        <saml2:AudienceRestriction>
+            <saml2:Audience>http://ihe.connectathon.XUA/X-ServiceProvider-IHE-Connectathon</saml2:Audience>
+        </saml2:AudienceRestriction>
+    </saml2:Conditions>
+    <saml2:AuthnStatement AuthnInstant="2024-02-22T22:29:33.601Z">
+        <saml2:AuthnContext>
+            <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Password</saml2:AuthnContextClassRef>
+        </saml2:AuthnContext>
+    </saml2:AuthnStatement>
+    <saml2:AttributeStatement>
+        <saml2:Attribute Name="urn:oasis:names:tc:xspa:1.0:subject:subject-id" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue xsi:type="xsd:string">Gregory House</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="urn:oasis:names:tc:xspa:1.0:subject:organization" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue xsi:type="xsd:string">Princeton Plainsboro Teaching Hospital</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="urn:oasis:names:tc:xspa:1.0:subject:organization-id" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue xsi:type="xsd:string">https://ppth.local</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="urn:oasis:names:tc:xspa:1.0:subject:npi" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue xsi:type="xsd:string">1234567890</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="urn:ihe:iti:xca:2010:homeCommunityId" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue xsi:type="xsd:string">urn:oid:1.2.3.4.5.6.7.8.9</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="urn:ihe:iti:xua:2017:subject:provider-identifier" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue>
+                <id assigningAuthorityName="Digital Health Platform" displayable="true" extension="123456789" root="1.2.3.4.5.6.7.8.9" xsi:type="II" xmlns="urn:hl7-org:v3"/>
+            </saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="urn:oasis:names:tc:xacml:2.0:resource:resource-id" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue xsi:type="xsd:string">123456789^^^&amp;1.2.3.4.5.6.7.8.9&amp;ISO</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="urn:ihe:iti:bppc:2007:docid" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue xsi:type="xsd:anyURI">urn:oid:1.2.3.4.5.6.7.8.9</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="urn:ihe:iti:xua:2012:acp" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue xsi:type="xsd:anyURI">urn:oid:1.2.3.4.5.6.7.8.9</saml2:AttributeValue>
+        </saml2:Attribute>
+    </saml2:AttributeStatement>
+</saml2:Assertion>
