@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<AuditMessage>
+    <EventIdentification EventActionCode="E" EventDateTime="2024-03-23T14:38:46.994012800Z" EventOutcomeIndicator="0">
+        <EventID csd-code="110112" codeSystemName="DCM" originalText="Query"/>
+        <EventTypeCode csd-code="ITI-55" codeSystemName="IHE Transactions"
+                       originalText="Cross Gateway Patient Discovery"/>
+        <EventOutcomeDescription/>
+    </EventIdentification>
+    <ActiveParticipant UserID="http://www.w3.org/2005/08/addressing/anonymous" UserIsRequestor="false"
+                       NetworkAccessPointID="127.0.0.1" NetworkAccessPointTypeCode="2">
+        <RoleIDCode csd-code="110153" codeSystemName="DCM" originalText="Source Role ID"/>
+    </ActiveParticipant>
+    <ActiveParticipant UserID="&lt;doctor@urn:subiger:dhp:sts&gt;" UserName="&lt;doctor@urn:subiger:dhp:sts&gt;"
+                       UserIsRequestor="true"/>
+    <ActiveParticipant UserID="doctor" UserName="Gregory House" UserIsRequestor="false"/>
+    <ActiveParticipant UserID="https://localhost:8083/services/iti55" AlternativeUserID="28788" UserIsRequestor="false"
+                       NetworkAccessPointID="localhost" NetworkAccessPointTypeCode="1">
+        <RoleIDCode csd-code="110152" codeSystemName="DCM" originalText="Destination Role ID"/>
+    </ActiveParticipant>
+    <AuditSourceIdentification AuditSourceID="XCPD Responding Gateway">
+        <AuditSourceTypeCode csd-code="4" codeSystemName="DCM" originalText="Application Server Process or Thread"/>
+    </AuditSourceIdentification>
+    <ParticipantObjectIdentification ParticipantObjectID="35423@1.2.840.114350.1.13.0.1.7.1.1"
+                                     ParticipantObjectTypeCode="2" ParticipantObjectTypeCodeRole="24">
+        <ParticipantObjectIDTypeCode csd-code="ITI-55" codeSystemName="IHE Transactions"
+                                     originalText="Cross Gateway Patient Discovery"/>
+        <ParticipantObjectQuery>
+            PHF1ZXJ5QnlQYXJhbWV0ZXI+CiAgPHF1ZXJ5SWQgZXh0ZW5zaW9uPSIxODIwNCIgcm9vdD0iMS4yLjg0MC4xMTQzNTAuMS4xMy4yOC4xLjE4LjUuOTk5IiAvPgogIDxzdGF0dXNDb2RlIGNvZGU9Im5ldyIgLz4KICA8cmVzcG9uc2VNb2RhbGl0eUNvZGUgY29kZT0iUiIgLz4KICA8cmVzcG9uc2VQcmlvcml0eUNvZGUgY29kZT0iSSIgLz4KICA8cGFyYW1ldGVyTGlzdD4KICAgIDxsaXZpbmdTdWJqZWN0QmlydGhUaW1lPgogICAgICA8dmFsdWUgdmFsdWU9IjE5NjYwNjA1IiAvPgogICAgICA8c2VtYW50aWNzVGV4dD5MaXZpbmdTdWJqZWN0LmJpcnRoVGltZTwvc2VtYW50aWNzVGV4dD4KICAgIDwvbGl2aW5nU3ViamVjdEJpcnRoVGltZT4KICAgIDxsaXZpbmdTdWJqZWN0TmFtZT4KICAgICAgPHZhbHVlPgogICAgICAgIDxmYW1pbHk+WGNwZDwvZmFtaWx5PgogICAgICAgIDxnaXZlbj5QYXQ8L2dpdmVuPgogICAgICA8L3ZhbHVlPgogICAgICA8c2VtYW50aWNzVGV4dD5MaXZpbmdTdWJqZWN0Lm5hbWU8L3NlbWFudGljc1RleHQ+CiAgICA8L2xpdmluZ1N1YmplY3ROYW1lPgogIDwvcGFyYW1ldGVyTGlzdD4KPC9xdWVyeUJ5UGFyYW1ldGVyPg==
+        </ParticipantObjectQuery>
+        <ParticipantObjectDetail type="ihe:homeCommunityID" value="MS4yLjMuOTI4Ljk1NQ=="/>
+    </ParticipantObjectIdentification>
+</AuditMessage>

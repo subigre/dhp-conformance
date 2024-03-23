@@ -1,0 +1,108 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+    <!-- @formatter:off -->
+    <soap:Header>
+        <Action xmlns="http://www.w3.org/2005/08/addressing">urn:hl7-org:v3:PRPA_IN201306UV02:CrossGatewayPatientDiscovery</Action>
+        <MessageID xmlns="http://www.w3.org/2005/08/addressing">urn:uuid:3763126a-45f6-4541-ac93-38d09b6f3c8a</MessageID>
+        <To xmlns="http://www.w3.org/2005/08/addressing">http://www.w3.org/2005/08/addressing/anonymous</To>
+        <RelatesTo xmlns="http://www.w3.org/2005/08/addressing">uuid:71f7d676-126d-457b-98d4-3b1206f8831b</RelatesTo>
+    </soap:Header>
+    <!-- @formatter:on -->
+    <soap:Body>
+        <PRPA_IN201306UV02 ITSVersion="XML_1.0" xmlns="urn:hl7-org:v3">
+            <id extension="969348" root="22dc1746-e861-41a4-b187-97ba8adeda6e"/>
+            <creationTime value="20240323153846"/>
+            <interactionId extension="PRPA_IN201306UV02" root="2.16.840.1.113883.1.6"/>
+            <processingCode code="P"/>
+            <processingModeCode code="T"/>
+            <acceptAckCode code="NE"/>
+            <receiver typeCode="RCV">
+                <device classCode="DEV" determinerCode="INSTANCE">
+                    <id root="1.2.840.114350.1.13.999.567"/>
+                    <asAgent classCode="AGNT">
+                        <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                            <id root="1.2.3.928.955"/>
+                        </representedOrganization>
+                    </asAgent>
+                </device>
+            </receiver>
+            <sender typeCode="SND">
+                <device classCode="DEV" determinerCode="INSTANCE">
+                    <id root="1.2.840.114350.1.13.999.234"/>
+                </device>
+            </sender>
+            <acknowledgement>
+                <typeCode code="AA"/>
+                <targetMessage>
+                    <id extension="35423" root="1.2.840.114350.1.13.0.1.7.1.1"/>
+                </targetMessage>
+            </acknowledgement>
+            <controlActProcess classCode="CACT" moodCode="EVN">
+                <code code="PRPA_TE201306UV02" codeSystem="2.16.840.1.113883.1.6"/>
+                <subject contextConductionInd="false" typeCode="SUBJ">
+                    <registrationEvent classCode="REG" moodCode="EVN">
+                        <statusCode code="active"/>
+                        <subject1 typeCode="SBJ">
+                            <patient classCode="PAT">
+                                <id extension="IHERED-1039" root="1.3.6.1.4.1.21367.13.20.1000"/>
+                                <statusCode code="active"/>
+                                <patientPerson classCode="PSN" determinerCode="INSTANCE">
+                                    <name>
+                                        <given>Pat</given>
+                                        <family>Xcpd</family>
+                                    </name>
+                                    <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.12.1"
+                                                              displayName="Female"/>
+                                    <birthTime value="19660605"/>
+                                    <addr>
+                                        <country>USA</country>
+                                        <state>IL</state>
+                                        <city>CHICAGO</city>
+                                        <postalCode>60601</postalCode>
+                                        <streetAddressLine>123 MICHIGAN AVENUE</streetAddressLine>
+                                    </addr>
+                                </patientPerson>
+                                <subjectOf1>
+                                    <queryMatchObservation classCode="COND" moodCode="EVN">
+                                        <code code="IHE_PDQ"/>
+                                        <value value="100" xsi:type="INT"
+                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                    </queryMatchObservation>
+                                </subjectOf1>
+                            </patient>
+                        </subject1>
+                        <custodian typeCode="CST">
+                            <assignedEntity classCode="ASSIGNED">
+                                <id root="1.2.3.23"/>
+                                <code code="NotHealthDataLocator" codeSystem="1.3.6.1.4.1.19376.1.2.27.2"/>
+                            </assignedEntity>
+                        </custodian>
+                    </registrationEvent>
+                </subject>
+                <queryAck>
+                    <queryId extension="18204" root="1.2.840.114350.1.13.28.1.18.5.999"/>
+                    <statusCode code="deliveredResponse"/>
+                    <queryResponseCode code="OK"/>
+                </queryAck>
+                <queryByParameter>
+                    <queryId extension="18204" root="1.2.840.114350.1.13.28.1.18.5.999"/>
+                    <statusCode code="new"/>
+                    <responseModalityCode code="R"/>
+                    <responsePriorityCode code="I"/>
+                    <parameterList>
+                        <livingSubjectBirthTime>
+                            <value value="19660605"/>
+                            <semanticsText>LivingSubject.birthTime</semanticsText>
+                        </livingSubjectBirthTime>
+                        <livingSubjectName>
+                            <value>
+                                <family>Xcpd</family>
+                                <given>Pat</given>
+                            </value>
+                            <semanticsText>LivingSubject.name</semanticsText>
+                        </livingSubjectName>
+                    </parameterList>
+                </queryByParameter>
+            </controlActProcess>
+        </PRPA_IN201306UV02>
+    </soap:Body>
+</soap:Envelope>
